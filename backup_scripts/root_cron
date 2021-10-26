@@ -1,0 +1,9 @@
+CRON_TZ=Europe/Moscow
+
+# Restore from backup
+# 25 6 * * * /bin/bash /root/zimbra_restore.sh > /dev/null 2>> /opt/zimbra/log/zimbra_backup.log
+
+# Zimbra backup
+25 1 * * * /bin/bash /root/backup_scripts/zimbra_backup.sh > /dev/null 2>> /opt/zimbra/log/zimbra_backup.log
+
+
